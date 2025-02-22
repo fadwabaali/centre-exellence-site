@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
+
+    <section class="container-sr">
+        <section class=" fade-in" id="first-container-sr">
+            <h1>NOS VALEURS UNIQUES</h1>
+            <div class="values-content-sr">
+                <div class="value-sr">
+                    <div class="value-icon-sr">
+                        <img src="img/value1.png" alt="Like">
+                    </div>
+                    <div class="value-text-sr">
+                        <h3>Éducateurs Experts</h3>
+                        <p>Une équipe de professionnels expérimentés dédiée à offrir des cours et un accompagnement de
+                            qualité</p>
+                    </div>
+                </div>
+                <div class="value-sr">
+                    <div class="value-icon-sr">
+                        <img src="img/value2.png" alt="Like">
+                    </div>
+                    <div class="value-text-sr">
+                        <h3>Accent sur le Bien-être</h3>
+                        <p>En mettant l'accent sur le bien-être mental grâce à des sorties régulières et des activités
+                            sportives, nous aidons les étudiants à se détendre et à se ressourcer</p>
+                    </div>
+                </div>
+                <div class="value-sr">
+                    <div class="value-icon-sr">
+                        <img src="img/value3.png" alt="Like">
+                    </div>
+                    <div class="value-text-sr">
+                        <h3>Approche Personnalisée</h3>
+                        <p>Des programmes adaptés aux besoins individuels, garantissant à chaque étudiant ou client le
+                            soutien nécessaire pour réussir</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" fade-in" id="second-container-sr">
+            <div class="grid-container-sr" id="first-grid-sr">
+                <h1>NOS ESPRITS <br> GUIDES</h1>
+                <p>Nos enseignants dévoués mettent tout leur cœur dans chaque leçon, guidant vos enfants avec passion et
+                    soin.
+                    Grâce à leur travail acharné et à leur engagement sans faille, ils inspirent un amour pour
+                    l'apprentissage et conduisent chaque enfant vers un avenir plus brillant et couronné de succès.
+                    Avec leur expertise et leur dévouement sincère, le potentiel de votre enfant brillera comme jamais
+                    auparavant.</p>
+            </div>
+            <div class="grid-container-sr" id="second-grid-sr">
+                <div class="grid-content-sr" id="first-content-sr">
+                    <div class="teacher-card-sr">
+                        <div class="teacher-img-sr" id="pic-taha-sr">
+                            <img src="img/prof taha.png" alt="Taha Houane">
+                        </div>
+                        <span class="teacher-name-sr">
+                            <h3>TAHA HOUANE</h3>
+                        </span>
+                    </div>
+                    <div class="infos-card-sr" id="text-taha-sr">
+                        <p>✦ Le français a été enseigné dès le début avec expertise et dévouement.</p>
+                    </div>
+                </div>
+
+                <div class="grid-content-sr" id="second-content-sr">
+                    <div class="infos-card-sr" id="text-ayoub-sr">
+                        <p>✦ Les mathématiques ont été enseignées dès le début avec compétence et passion.</p>
+                    </div>
+
+                    <div class="teacher-card-sr">
+                        <div class="teacher-img-sr" id="pic-ayoub-sr">
+                            <img src="img/prof ayoub.png" alt="Ayoub Motachakir">
+                        </div>
+                        <span class="teacher-name-sr">
+                            <h3>AYOUB MOTACHAKIR</h3>
+                        </span>
+                    </div>
+                </div>
+                <div class="grid-content-sr" id="third-content-sr">
+                    <div class="teacher-card-sr ">
+                        <div class="teacher-img-sr" id="pic-abdo-sr">
+                            <img src="img/prof_abdeljabar-ai-brush-removebg-vjit3uyr.png" alt="Abdel Jabbar">
+                        </div>
+                        <span class="teacher-name-sr ">
+                            <h3>ABDELJABBAR L'YASMI</h3>
+                        </span>
+                    </div>
+                    <div class="infos-card-sr " id="text-abdo-sr">
+                        <p>✦ Les sciences de la vie et de la terre ont été enseignées depuis le début avec connaissance
+                            et passion</p>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+        </section>
+    </section>
     
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll(".fade-in");
+
+            function checkScroll() {
+                elements.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        el.classList.add("show");
+                    } else {
+                        el.classList.remove("show");
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", checkScroll);
+            checkScroll(); // Run on page load
+        });
+    </script>
+
 </body>
+
 </html>
