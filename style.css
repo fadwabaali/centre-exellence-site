@@ -14,6 +14,99 @@
     --color-text-muted: #BCBCBC;
 }
 
+.herocontainer{
+    display:  flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 5rem;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-family: 'IBM Plex Mono', sans-serif;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+.hero h1, .hero p, .hero .cta-button {
+    margin: 10px 0;
+}
+
+.hero p{
+    font-family:Anonymous Pro;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.cta-button {
+    width: 190px;
+    height: 46px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border-radius: 19PX;
+}
+
+.imagee-container {
+    margin-inline: 3%;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+}
+  
+.imagee {
+    position: absolute;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+  
+.imagee-1 {
+    top: 0;
+    left: 0;
+    width: 60%;
+    z-index: 1;
+}
+  
+.imagee-2 {
+    top: 10%;
+    right: 0;
+    width: 65%;
+    z-index: 2;
+}
+  
+.imagee-3 {
+    bottom: 0;
+    left: 15%;
+    width: 50%;
+    z-index: 3;
+}
+  
+.imagee:hover {
+ transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .herocontainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.25rem;
+    }
+}
+
 .quote_sec{
     background-color: var(--color-text-muted);
     padding: 5rem;
